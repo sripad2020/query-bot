@@ -131,7 +131,7 @@ data=json.loads(start)
 for i in data['intents']:
     ques = i['patterns'].copy()
     answer = i['responses'].copy()
-updater = Updater("5253235537:AAEPWzJdcD02JbkYysvtJGEKfBzRwsEhJb8",use_context=True)
+updater = Updater("please make enter your api key from telegram using BOTFATHER ",use_context=True)
 def start(update: Update, context: CallbackContext):
     update.message.reply_text("Hello user, Welcome to the Bot Please write /help to see the commands available.")
 def help(update: Update, context: CallbackContext):
